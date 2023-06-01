@@ -20,6 +20,14 @@
         @endforelse
     </ul>
 
+    <ul>
+        @if (in_array('green', $colors))
+            <li> tra i colori e' presente il verde</li>
+        @else
+            <li>tra i colori non e' presente il verde</li>
+        @endif
+    </ul>
+
 </body>
 
 </html>
