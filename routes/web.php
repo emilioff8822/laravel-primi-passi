@@ -22,7 +22,13 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/info', function () {
+    $colors = [
+        'red',
+        'blue',
+        'yellow',
+        'green'
+    ];
 
-    return view('info');
+    return view('info', compact('colors'));
 
 })->name('info');
